@@ -1,0 +1,6 @@
+set solib-search-path D:/MyRepository/androidStudioProject/RainDrop/app/src/main/obj/local/armeabi-v7a
+source D:/aboutSoftware/android-ndk-r10e/prebuilt/common/gdb/common.setup
+directory D:/aboutSoftware/android-ndk-r10e/platforms/android-3/arch-arm/usr/include D:\MyRepository\androidStudioProject\RainDrop\app\src\main\jni D:\MyRepository\androidStudioProject\RainDrop\app\src\debug\jni D:/aboutSoftware/android-ndk-r10e/sources/cxx-stl/system/include D:/MyRepository/androidStudioProject/RainDrop/app/src/main/jni
+file ./obj/local/armeabi-v7a/app_process
+target remote :5039
+set breakpoint pending on
