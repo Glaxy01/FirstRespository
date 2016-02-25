@@ -1,0 +1,82 @@
+package com.kqc.bijia.company.activity;
+
+import android.content.Intent;
+import android.view.View;
+import android.view.ViewStub;
+
+import com.kqc.bijia.company.R;
+import com.kqc.bijia.company.activity.base.BaseActivity;
+import com.kqc.bijia.company.receiver.MyJpushReceiver;
+import com.kqc.bijia.company.widget.PersonalCenterView;
+
+/**
+ * @author RainDrop
+ * @date 2016/1/12
+ * @time 10:30.
+ */
+public class MineActivity extends BaseActivity {
+
+    @Override
+    protected void initViews() {
+        setContentView(R.layout.activity_mine);
+        setCenterTitle(R.string.mine_mine);
+        setLeftTitle(R.string.main_back);
+
+        findViewById(R.id.minePriceUpload).setOnClickListener(this);
+        findViewById(R.id.mineClients).setOnClickListener(this);
+        findViewById(R.id.minePocket).setOnClickListener(this);
+        findViewById(R.id.mineQues).setOnClickListener(this);
+        findViewById(R.id.mineSetting).setOnClickListener(this);
+        findViewById(R.id.homePage).setOnClickListener(this);
+
+        if (MyJpushReceiver.NOTIFY_CLIENT_COUNT > 0) {
+            ViewStub viewStub = (ViewStub) findViewById(R.id.clientCountNumberVs);
+            viewStub.inflate();
+            PersonalCenterView view = (PersonalCenterView) findViewById(R.id.countNumber);
+            view.setRedBgStyle(PersonalCenterView.RED_BG_STYLE);
+        }
+    }
+
+    @Override
+    protected void initActions() {
+
+    }
+
+    @Override
+    protected void initData() {
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        super.onClick(v);
+        switch (v.getId()) {
+            case R.id.minePriceUpload:
+                startActivity(new Intent(mActivityContext
+                        , ChooseCarActivity.class));
+                break;
+            case R.id.mineClients:
+                startActivity(new Intent(mActivityContext
+                        , ClientActivity.class));
+                break;
+            case R.id.minePocket:
+                startActivity(new Intent(mActivityContext
+                        , PocketActivity.class));
+                break;
+            case R.id.mineQues:
+                startActivity(new Intent(mActivityContext
+                        , QuesActivity.class));
+                break;
+            case R.id.mineSetting:
+                startActivity(new Intent(mActivityContext
+                        , SettingActivity.class));
+                break;
+            case R.id.homePage:
+                startActivity(new Intent(mActivityContext
+                        , HomeActivity.class));
+                break;
+            default:
+                break;
+        }
+    }
+}
