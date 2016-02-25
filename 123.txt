@@ -1,3 +1,4 @@
+
 package com.kqc.bijia.company.activity;
 
 import android.content.Intent;
@@ -80,3 +81,6 @@ public class MineActivity extends BaseActivity {
         }
     }
 }
+
+dddddddd
+
