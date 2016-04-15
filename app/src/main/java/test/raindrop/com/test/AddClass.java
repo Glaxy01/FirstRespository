@@ -6,5 +6,5 @@ package test.raindrop.com.test;
  * 22:51.
  */
 public class AddClass {
-    String add = "develop";
+    String add = "develop2";
 }
