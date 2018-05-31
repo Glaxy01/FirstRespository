@@ -16,6 +16,7 @@ import com.kqc.bijia.company.widget.PersonalCenterView;
  * @date 2016/1/12
  * @time 10:30.
  * dev1 commit 1
+ * dev1.0.0 commit 1
  */
 public class MineActivity extends BaseActivity {
 
