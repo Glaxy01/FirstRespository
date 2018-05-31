@@ -11,6 +11,7 @@ import com.kqc.bijia.company.receiver.MyJpushReceiver;
 import com.kqc.bijia.company.widget.PersonalCenterView;
 
 /**
+ * dev commit 1
  * @author RainDrop
  * @date 2016/1/12
  * @time 10:30.
