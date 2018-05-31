@@ -20,6 +20,7 @@ import com.kqc.bijia.company.widget.PersonalCenterView;
  * dev1.0.0 commit 2
  dev1.0.0 commit 3
  dev1.0.0 commit 4
+ * dev1 commit 1
  */
 public class MineActivity extends BaseActivity {
 
